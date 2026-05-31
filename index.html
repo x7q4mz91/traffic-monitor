@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IP Traffic Monitor</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#ffffff;
+    color:#111827;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+.container{
+    width:100%;
+    max-width:950px;
+    animation:fadeUp 1s ease;
+}
+
+.hero{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.logo{
+    width:90px;
+    height:90px;
+    margin:0 auto 25px;
+    border-radius:24px;
+    background:#f3f4f6;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:42px;
+    transition:.3s;
+}
+
+.logo:hover{
+    transform:translateY(-4px);
+}
+
+h1{
+    font-size:3rem;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.subtitle{
+    color:#6b7280;
+    font-size:1.1rem;
+    max-width:700px;
+    margin:0 auto;
+}
+
+.card{
+    background:white;
+    border:1px solid #e5e7eb;
+    border-radius:24px;
+    padding:30px;
+    margin-bottom:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    animation:fadeUp 1.2s ease;
+}
+
+.card h2{
+    margin-bottom:15px;
+    font-size:1.4rem;
+}
+
+.card p{
+    line-height:1.8;
+    color:#4b5563;
+}
+
+.structure{
+    background:#111827;
+    color:white;
+    border-radius:16px;
+    padding:24px;
+    margin-top:20px;
+    overflow-x:auto;
+    font-family:Consolas, monospace;
+    line-height:1.8;
+    font-size:.95rem;
+}
+
+.badges{
+    display:flex;
+    gap:12px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:25px;
+}
+
+.badge{
+    background:#f3f4f6;
+    border:1px solid #e5e7eb;
+    padding:10px 16px;
+    border-radius:999px;
+    font-size:.9rem;
+}
+
+.footer{
+    text-align:center;
+    margin-top:35px;
+    color:#9ca3af;
+    font-size:.9rem;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:768px){
+    h1{
+        font-size:2.2rem;
+    }
+
+    .card{
+        padding:22px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="hero">
+        <div class="logo">🌐</div>
+
+        <h1>Traffic Monitoring</h1>
+
+        <p class="subtitle">
+            This website is used for analytics, performance monitoring,
+            and traffic observation. The purpose is to understand usage
+            patterns and improve the website experience.
+        </p>
+
+        <div class="badges">
+            <div class="badge">Cloudflare Pages</div>
+            <div class="badge">Analytics</div>
+            <div class="badge">Monitoring</div>
+            <div class="badge">Transparent Notice</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Visitor Information Notice</h2>
+
+        <p>
+            This website performs traffic monitoring and analytics.
+            Information such as visit timestamps, requested pages,
+            browser information, and country-level geographic data may
+            be processed for operational and statistical purposes.
+        </p>
+
+        <br>
+
+        <p>
+            Monitoring helps evaluate website performance, understand
+            traffic patterns, and maintain service reliability.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Project Structure</h2>
+
+        <div class="structure">
+📁 my-site
+│
+├── 📁 public
+│   └── 📄 index.html
+│
+└── 📁 functions
+    └── 📄 [[path]].js
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 Traffic Monitoring Project
+    </div>
+
+</div>
+
+</body>
+</html>
