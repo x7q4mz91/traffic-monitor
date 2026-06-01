@@ -4,9 +4,6 @@ export async function onRequest(context) {
   const country =
     context.request.headers.get("CF-IPCountry") || "Unknown";
 
-  const ip =
-    context.request.headers.get("CF-Connecting-IP") || "Unknown";
-
   const page = new URL(context.request.url).pathname;
 
   try {
@@ -20,7 +17,6 @@ export async function onRequest(context) {
         body: JSON.stringify({
           content:
             `🌐 New Visit\n` +
-            `IP: ${ip}\n` +
             `Country: ${country}\n` +
             `Page: ${page}\n` +
             `Time: ${new Date().toISOString()}`
