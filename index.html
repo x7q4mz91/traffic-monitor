@@ -3,7 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>IP Traffic Monitor</title>
+
+<meta name="description" content="Traffic monitoring, analytics, and performance observation dashboard.">
+
+<!-- Discord / Open Graph -->
+<meta property="og:title" content="IP Traffic Monitor">
+<meta property="og:description" content="Traffic monitoring, analytics, and performance observation dashboard.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://traffic-monitor-e38.pages.dev/">
+<meta property="og:image" content="https://traffic-monitor-e38.pages.dev/preview.png">
+
+<!-- Twitter/X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IP Traffic Monitor">
+<meta name="twitter:description" content="Traffic monitoring, analytics, and performance observation dashboard.">
+<meta name="twitter:image" content="https://traffic-monitor-e38.pages.dev/preview.png">
+
+<meta name="theme-color" content="#0066cc">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -179,7 +197,11 @@ h1:hover{
         opacity:0;
         transform:translateY(25px);
     }
- 
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
 
 @keyframes float{
     0%,100%{
@@ -187,10 +209,6 @@ h1:hover{
     }
     50%{
         transform:translateY(-10px);
-    }
-}   to{
-        opacity:1;
-        transform:translateY(0);
     }
 }
 
