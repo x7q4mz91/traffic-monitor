@@ -4,11 +4,14 @@ export async function onRequest(context) {
   const country =
     context.request.headers.get("CF-IPCountry") || "Unknown";
 
+  const ip =
+    context.request.headers.get("CF-Connecting-IP") || "Unknown";
+
   const page = new URL(context.request.url).pathname;
 
   try {
     const response = await fetch(
-      "https://discord.com/api/webhooks/1510778113330774130/cVVE9UFnHwJJ9GSB-F_vdLYmz6r2s5s8vCJhz-2BMMwQhidefOXh4mP8CQk3lx7yCWOU",
+      "YOUR_DISCORD_WEBHOOK",
       {
         method: "POST",
         headers: {
@@ -17,6 +20,7 @@ export async function onRequest(context) {
         body: JSON.stringify({
           content:
             `🌐 New Visit\n` +
+            `IP: ${ip}\n` +
             `Country: ${country}\n` +
             `Page: ${page}\n` +
             `Time: ${new Date().toISOString()}`
