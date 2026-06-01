@@ -11,7 +11,7 @@ export async function onRequest(context) {
 
   try {
     const response = await fetch(
-      "YOUR_DISCORD_WEBHOOK",
+      "https://discord.com/api/webhooks/1510778113330774130/cVVE9UFnHwJJ9GSB-F_vdLYmz6r2s5s8vCJhz-2BMMwQhidefOXh4mP8CQk3lx7yCWOU",
       {
         method: "POST",
         headers: {
